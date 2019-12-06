@@ -7,10 +7,7 @@ abstract class CShape{
 
       
   
-   public void show(){
-
-
-    }
+   public void show();
 }
 
 class CTriangle extends CShape{
@@ -25,6 +22,11 @@ class CTriangle extends CShape{
  System.out.print("面積為:"+llong*width/2)
  System.out.print("color:"+color)
  }
+public static void main(String[] args){
+CTriangle c=new CTriangle("red");
+c.setside(3,4,5);
+c.show();
 
+} 
 
 }
